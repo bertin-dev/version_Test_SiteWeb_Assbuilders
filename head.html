@@ -1,0 +1,63 @@
+    <!--Contenu: THE BUILDERS INSTITUTE & BUSINESS SCHOOL  et le LOGO de la page WEB--> 
+	<div class="top">
+		<!-- Contenu: Menu HORIZONTAL mobiles, tablettes et PC -->
+	<div id="nav-wrapper">
+		<div id="nav" class="navbar navbar-default navbar-inner">
+					<!--Contenu: TOUT MENU HORIZONTAL-->
+		<div class="container">
+			<!--CONTENU: BARRE DE MENU COMPLETE POUR MOBILE-->
+		<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				   <span class="sr-only">Toggle navigation</span>
+				   <span class="icon-bar"></span>
+				   <span class="icon-bar"></span>
+				   <span class="icon-bar"></span>
+				  </button>
+				  
+				</div>
+				
+				
+			<div class="row">
+				<h2 id="titreP"><center class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">THE BUILDERS INSTITUTE & BUSINESS SCHOOL </center></h2>
+				 <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s"> <a href="index.php#page-top" class="navbar-brand navbar-brand-centered"><img src="logo.png" alt="First slide"></a></div>
+			</div>
+				 <!--Contenu: BARRE DE MENU HORIZONTAL COMPLETE-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<!--Contenu: MENU HORIZONTAL DE GAUCHE-->
+					<ul class="nav navbar-nav">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s" title="ACCUEIL" href="index.php">Accueil</a>
+						</li>
+						<li>
+							<a class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s" href="portfolio.php" title="Images du centre">portfolio</a>
+						</li>
+						<li>
+							<a class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s" href="#nav-gallery" title="The Builders Association">The Builders Association</a>
+						</li>						
+					</ul>
+					<!--Contenu: MENU HORIZONTAL DROIT-->
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+		                 <a class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s" href="login.php" title="Connectez-Vous Ici"><?php if(isset($_COOKIE['ID_UTILISATEUR'])) echo 'Deconnexion'; else echo 'Connexion';?></a>
+						</li>
+						<li>
+						  <?php if(isset($_COOKIE['ID_UTILISATEUR']))
+						   echo '<a class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s" title="Vous Etes Bien identifié">'.$_SESSION['prenom'].' '.$_SESSION['nom'].'</a>';
+						   else
+						   echo '<a class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s" href="register.php" title="inscrivez-vous Ici c\'est gratuit">Inscription</a>';
+						  ?>
+						  
+						</li>
+						<li>
+							<a class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s" href="Contact.php" title="Situation Géographique">Localisation</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+		</div>
+		
+	</div>
+	</div>
+	</div>

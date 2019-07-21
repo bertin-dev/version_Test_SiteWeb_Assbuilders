@@ -1,0 +1,4 @@
+AuthName "page d'administration protégé"
+AuthType Basic
+AuthUserFile "/home/ozcl59r6/public_html/Administration/.htpasswd"
+Require valid-user
